@@ -33,4 +33,12 @@ Public Class FrmMain
         backmusic.Stop()
     End Sub
 
+    Private Sub picLogic_MouseHover(sender As Object, e As EventArgs) Handles picLogic.MouseHover
+        lblImagenes.BackColor = Color.Red
+    End Sub
+
+    Private Sub picLogic_MouseLeave(sender As Object, e As EventArgs) Handles picLogic.MouseLeave
+        lblImagenes.BackColor = Color.FromArgb(0, 74, 107)
+    End Sub
+
 End Class

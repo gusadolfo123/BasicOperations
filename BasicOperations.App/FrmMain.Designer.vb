@@ -25,20 +25,20 @@ Partial Class FrmMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMain))
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblVideo = New System.Windows.Forms.Label()
         Me.btnContinuousVideo = New System.Windows.Forms.Button()
         Me.btnPauseVideo = New System.Windows.Forms.Button()
         Me.btnPlayVideo = New System.Windows.Forms.Button()
         Me.btnStopVideo = New System.Windows.Forms.Button()
         Me.AxMedia = New AxWMPLib.AxWindowsMediaPlayer()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblImagenes = New System.Windows.Forms.Label()
         Me.picLogic = New System.Windows.Forms.PictureBox()
         Me.rtxbox = New System.Windows.Forms.RichTextBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.btnPLayAudio = New System.Windows.Forms.Button()
         Me.btnStopAudio = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblAudio = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.AxMedia, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -61,7 +61,7 @@ Partial Class FrmMain
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.lblVideo)
         Me.Panel1.Controls.Add(Me.btnContinuousVideo)
         Me.Panel1.Controls.Add(Me.btnPauseVideo)
         Me.Panel1.Controls.Add(Me.btnPlayVideo)
@@ -72,18 +72,18 @@ Partial Class FrmMain
         Me.Panel1.Size = New System.Drawing.Size(516, 394)
         Me.Panel1.TabIndex = 3
         '
-        'Label1
+        'lblVideo
         '
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(516, 42)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Video"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblVideo.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.lblVideo.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lblVideo.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblVideo.ForeColor = System.Drawing.Color.White
+        Me.lblVideo.Location = New System.Drawing.Point(0, 0)
+        Me.lblVideo.Name = "lblVideo"
+        Me.lblVideo.Size = New System.Drawing.Size(516, 42)
+        Me.lblVideo.TabIndex = 5
+        Me.lblVideo.Text = "Video"
+        Me.lblVideo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnContinuousVideo
         '
@@ -132,7 +132,7 @@ Partial Class FrmMain
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.lblImagenes)
         Me.Panel2.Controls.Add(Me.picLogic)
         Me.Panel2.Controls.Add(Me.rtxbox)
         Me.Panel2.Location = New System.Drawing.Point(543, 108)
@@ -140,18 +140,18 @@ Partial Class FrmMain
         Me.Panel2.Size = New System.Drawing.Size(547, 621)
         Me.Panel2.TabIndex = 4
         '
-        'Label2
+        'lblImagenes
         '
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(0, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(547, 42)
-        Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Imagenes y Texto"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblImagenes.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.lblImagenes.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lblImagenes.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblImagenes.ForeColor = System.Drawing.Color.White
+        Me.lblImagenes.Location = New System.Drawing.Point(0, 0)
+        Me.lblImagenes.Name = "lblImagenes"
+        Me.lblImagenes.Size = New System.Drawing.Size(547, 42)
+        Me.lblImagenes.TabIndex = 6
+        Me.lblImagenes.Text = "Imagenes y Texto"
+        Me.lblImagenes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'picLogic
         '
@@ -175,7 +175,7 @@ Partial Class FrmMain
         '
         Me.Panel3.Controls.Add(Me.btnPLayAudio)
         Me.Panel3.Controls.Add(Me.btnStopAudio)
-        Me.Panel3.Controls.Add(Me.Label3)
+        Me.Panel3.Controls.Add(Me.lblAudio)
         Me.Panel3.Location = New System.Drawing.Point(25, 516)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(509, 213)
@@ -199,18 +199,18 @@ Partial Class FrmMain
         Me.btnStopAudio.Text = "Parar"
         Me.btnStopAudio.UseVisualStyleBackColor = True
         '
-        'Label3
+        'lblAudio
         '
-        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.Label3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(0, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(509, 42)
-        Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Audio"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblAudio.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.lblAudio.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lblAudio.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblAudio.ForeColor = System.Drawing.Color.White
+        Me.lblAudio.Location = New System.Drawing.Point(0, 0)
+        Me.lblAudio.Name = "lblAudio"
+        Me.lblAudio.Size = New System.Drawing.Size(509, 42)
+        Me.lblAudio.TabIndex = 6
+        Me.lblAudio.Text = "Audio"
+        Me.lblAudio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'FrmMain
         '
@@ -245,10 +245,10 @@ Partial Class FrmMain
     Friend WithEvents Panel2 As Panel
     Friend WithEvents rtxbox As RichTextBox
     Friend WithEvents picLogic As PictureBox
-    Private WithEvents Label1 As Label
-    Private WithEvents Label2 As Label
+    Private WithEvents lblVideo As Label
+    Private WithEvents lblImagenes As Label
     Friend WithEvents Panel3 As Panel
-    Private WithEvents Label3 As Label
+    Private WithEvents lblAudio As Label
     Friend WithEvents btnPLayAudio As Button
     Friend WithEvents btnStopAudio As Button
 End Class
